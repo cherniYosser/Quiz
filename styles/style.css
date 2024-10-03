@@ -1,0 +1,134 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container {
+  height: 100%;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.start-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.start-section button {
+  padding: 16px 38px;
+  background: #6495ed;
+  border: 1px solid #6495ed;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-text {
+  color: #fff;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.answers-text {
+  color: #000;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+#quiz-container {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  margin-top: 20px;
+}
+.difficulty-select {
+  padding: 10px;
+  border-radius: 5px;
+  background: #f3f3f3;
+  color: #000;
+  font-size: 16px;
+  font-family: monospace;
+}
+.question {
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: 700;
+}
+.next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 38px;
+  margin: 15px;
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+input[type="radio"] {
+  border: 5px solid white;
+  width: 20px;
+  height: 1.3em;
+  cursor: pointer;
+}
+
+#progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: #92acd9;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  #quiz-container {
+    width: 80%;
+  }
+}
+
+/* Media query for mobile phones (screens smaller than 480px) */
+@media (max-width: 480px) {
+  #quiz-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
