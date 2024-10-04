@@ -18,9 +18,13 @@ Quiz est une application de quiz sur les films qui permet aux utilisateurs de te
 
 ## Utilisation
 
-1. Si vous avez visual studio code :
-2.   install "LIVE SERVER" extension
-3.   cliquuz boutton droite et lancer le fichier 'index.html' avec "open with live server" 
+ Si vous avez visual studio code :
+1.   install "LIVE SERVER" extension
+2.   cliquuz boutton droite et lancer le fichier 'index.html' avec "open with live server"
+
+Sinon : 
+1. naviguez vers le dossier /quiz
+2. run cete commande : npx http-server .
 
 ## Fonctionnalités
 
