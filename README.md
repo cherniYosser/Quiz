@@ -1,4 +1,4 @@
-# Quiz-master
+# Quiz
 
 Quiz est une application de quiz sur les films qui permet aux utilisateurs de tester leurs connaissances sur les films en répondant à des questions à choix multiples.
 
