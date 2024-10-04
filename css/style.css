@@ -119,6 +119,12 @@ input[type="radio"] {
   line-height: 20px;
 }
 
+.timer {
+  text-align: right;
+  margin-top: 20px;
+  color: #000;
+}
+
 @media (max-width: 768px) {
   #quiz-container {
     width: 80%;

@@ -3,7 +3,7 @@ export async function getData(param) {
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error(`Failed to fetch data`);
+      throw new Error("Failed to fetch data");
     }
 
     const json = await response.json();

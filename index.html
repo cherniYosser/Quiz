@@ -1,15 +1,13 @@
 <html>
   <head>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <div class="container">
       <div class="start-section">
         <h1>Okaidi - Film quiz</h1>
         <div id="select-section">
           <label for="pet-select">Choose difficulty type:</label>
-
           <select
             class="difficulty-select"
             name="difficulty-type"
@@ -21,19 +19,19 @@
             <option value="hard">Hard</option>
           </select>
         </div>
-
         <button id="fetchDataButton" class="disabled" disabled>
           <span class="quiz-text">Let's start !</span>
         </button>
       </div>
-
       <div id="quiz-container" class="hidden">
         <div id="progress-bar">
           <div id="progress">0%</div>
         </div>
         <p id="question" class="question"></p>
         <form id="answers"></form>
-        <p id="timer">Time left: <span id="time">20</span>s</p>
+        <p id="timer" class="timer quiz-text">
+          Time left: <span id="time">20</span>s
+        </p>
         <button id="nextButton" class="next">
           <span class="quiz-text">Next</span>
         </button>
@@ -44,6 +42,6 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./functions/quiz.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
