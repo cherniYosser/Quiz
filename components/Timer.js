@@ -1,7 +1,7 @@
 import { nextQuestion } from "./Question.js";
 
 let timer;
-const timeLimit = 20;
+const timeLimit = 10;
 let timeRemaining = timeLimit;
 const timerElement = document.getElementById("time");
 

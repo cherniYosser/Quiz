@@ -66,12 +66,12 @@ export function nextQuestion(filmList) {
   if (currentQuestionIndex < filmList.length) {
     showQuestion(filmList);
   } else {
-    const progressBar = document.getElementById("progress-bar");
+    const progressBar = getElementById("progress-bar");
     progressBar.classList.add("hidden");
     questionElement.innerHTML = `Quiz finished! Your final score is: ${score}/${filmList.length}`;
 
     answersElement.innerHTML = "";
-    document.getElementById("timer").classList.add("hidden");
+    getElementById("timer").classList.add("hidden");
     nextButton.classList.add("hidden");
   }
 }

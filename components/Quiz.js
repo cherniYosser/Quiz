@@ -10,7 +10,7 @@ const startButton = getElementById("fetchDataButton");
 const quizContainer = getElementById("quiz-container");
 const select = getElementById("select-section");
 
-$("select").on("change", function () {
+select.addEventListener("change", function () {
   const selectItem = getElementById("difficulty-select");
   difficultyType = selectItem.options[selectItem.selectedIndex].value;
   startButton.classList.remove("disabled");
